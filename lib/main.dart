@@ -19,6 +19,7 @@ void test2()
   print(names.length);
   names.add("Myname");
   print(names.length);
+  print(names);
 }
 class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
