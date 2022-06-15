@@ -1,20 +1,17 @@
 import 'package:flutter/material.dart';
 
 //const compile time
-const age=27;
-const ageTwice=age*2;
-String getFullName(String f,String l){
-// return f+" "+l;
-return '$f $l';
-}
+
 void main() {
   runApp(const MyApp());
 }
 void test()
 {
-  final names=['foo','bar','buzz'];
-  final fool=names[2];
-  print(fool);
+  var String ? name=null;
+  print(name);
+  name='efte';
+  print(name);
+
 }
 class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
@@ -22,7 +19,6 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    print(getFullName("Eftekher", "Ali"));
     test();
     return MaterialApp(
       title: 'Flutter Demo',
