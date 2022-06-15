@@ -5,20 +5,14 @@ import 'package:flutter/material.dart';
 void main() {
   runApp(const MyApp());
 }
+
 void test()
 {
-   String ? name=null;
-  print(name);
-  name='efte';
-  print(name);
-
-}
-void test2()
-{
-  var names=["foo","Bar","Baz"];
-  print(names.length);
-  names.add("Myname");
-  print(names.length);
+  // const names={'foo','bar','fooz'};
+  var names={'foo','bar','fooz'};
+  names.add('foo');
+  names.add('bar');
+  names.add('fooz');
   print(names);
 }
 class MyApp extends StatelessWidget {
@@ -28,7 +22,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
   //  test();
-  test2();
+  test();
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
