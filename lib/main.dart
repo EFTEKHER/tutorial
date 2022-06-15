@@ -7,11 +7,18 @@ void main() {
 }
 void test()
 {
-  var String ? name=null;
+   String ? name=null;
   print(name);
   name='efte';
   print(name);
 
+}
+void test2()
+{
+  var names=["foo","Bar","Baz"];
+  print(names.length);
+  names.add("Myname");
+  print(names.length);
 }
 class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
@@ -19,7 +26,8 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    test();
+  //  test();
+  test2();
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
